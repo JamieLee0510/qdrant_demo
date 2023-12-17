@@ -19,7 +19,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 初始化 NeuralSearcher，唯一Collection
 neural_searcher = NeuralSearcher(collection_name=COLLECTION_NAME)
+
+# 初始化 TextSearcher，唯一Collection
 text_searcher = TextSearcher(collection_name=COLLECTION_NAME)
 
 
